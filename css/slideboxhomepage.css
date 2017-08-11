@@ -1,0 +1,233 @@
+/*#homePanel {
+    width: 100%;
+}*/
+#homePanel.fullWidthLayout {
+    width: 100%;
+}
+
+.sideBar.homePage.fullWidthLayout {
+    display:none;
+}
+
+#sliderHomeContent {
+    clear:left;
+    width:100%;
+    padding-top:30px;
+}
+
+/*---------------------------main homepage panel-----------------------*/
+#homePanel {
+    /*    the wrapper for the slides and the boxes*/
+    overflow:hidden;
+    margin-bottom:30px;
+}
+#sliderBox {
+    position: relative;
+    float:left;
+    width:48.7883%;
+    margin:0 .5% 0;
+    overflow:hidden;
+}
+#sliderBox:before{
+    content: "";
+    display: block;
+    padding-top: 80.5%; 
+}
+#sliderBox.noMargins {
+    width: 50%;
+    margin: 0;
+}
+#sliderBox.noMargins:before{
+    content: "";
+    display: block;
+    padding-top: 79.99%;
+
+}
+/*---------------------------------------- homepage boxes ---------------------------------------------------*/
+#boxes {
+    width:100%;
+    position:relative;
+    margin:20px 0 20px;
+}
+.box {
+    background:silver;
+    position: relative;
+    width: 23.9%;   
+    overflow:hidden;
+    margin:0px 0.5% 12px;
+    color:white;
+    float:left;    
+    -webkit-transition: all .3s ease; -moz-transition: all .3s ease; transition: all .3s ease;
+}
+
+.box:hover {
+    opacity:0.8;
+}
+.box:before{
+    content: "";
+    display: block;
+    padding-top: 80%; 
+}
+
+.content{
+    /* this is within the box--*/
+    position:  absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.boxText {
+    position:absolute;
+    z-index:99;
+    width:90%;
+    height:90%;
+    padding:5%;
+    top:0;
+    left:0;
+    text-align:center;
+}
+.boxText.textIsBlack h2, .boxText.textIsBlack p{
+    color:#282422;
+}
+
+.boxText h2 {
+    font-size:2em;
+    margin:0;
+    line-height:1.1;
+    color:white;
+    font-weight:700;
+    letter-spacing:0.3px;
+}
+.boxText p {
+    margin-bottom:0;
+    font-size:1.3em;
+    font-weight:bold;
+    color:white;
+}
+.boxText a {
+    font-size:1.2em;
+    font-weight:bold;
+    color:white;
+}
+
+.boxText.bottom {
+    padding-top:40%;
+}
+
+.boxText.middle {
+    padding-top:30%;
+}
+
+span.linkText {
+    position:absolute;
+    bottom:0;
+    left:0;    
+    width:100%;
+    height:14%;
+    padding:3% 0 1%;
+    text-align:center;
+    font-weight:bold;
+    font-size:1.2em;
+}
+.box img {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:auto;
+    z-index:88;
+}
+.noMargins .box {
+    margin:0;
+    width: 25%;   
+}
+/*-------------------------------------- box colours --------------------------------------*/
+.textShadow {
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.6); 
+}
+
+/*--------------------------for videos so they can resize-------------------------*/
+
+.box .videoWrapper {
+    /*background:black;*/
+    position: relative;
+    padding-bottom: 73%;
+    /*padding-top: 25px;*/
+    height: 0;
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*--------------------------------------------------- box colours ------------------------------*/
+.black {
+    background:black;
+}
+
+.blue {
+    background:#404c6b;
+}
+.brown {
+    background:#663300;
+}
+.green {
+    background:#4b693f;
+}
+
+.greyGreen {
+    background:#1d4b4e;
+}
+
+.lightPurple {
+    background:#693f4b;
+}
+
+.maroon {
+    background:#66001a;
+}
+
+.red {
+    background:#cd000f;
+}
+
+.box.white {
+    background:white;
+}
+
+/*-------------------------------------text colours ------------------------------------------*/
+.boxText h2.blacktext, .boxText p.blacktext {
+    color:black;
+}
+
+.boxText h2.whitetext, .boxText p.whitetext {
+    color:white;
+}
+
+.boxText h2.greytext, .boxText p.greytext{
+    color:silver;
+}
+
+/*-----------------------------panle under the boxes and content----------------------*/
+#boxUnderPanel {
+    width:100%;
+    display: table;
+}
+
+#news, #events, #homeWidgets {
+    width:28%;
+    padding:0px 2% 20px;
+    margin:0 2% 0 0;
+    float:left;
+    background:white;
+    display: table-cell;
+}
+
+#homeWidgets {
+    margin-right: 0;
+}

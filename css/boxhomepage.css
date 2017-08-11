@@ -1,0 +1,108 @@
+#homePanel.fullWidthLayout {
+    width: 100%;
+}
+
+.sideBar.homePage.fullWidthLayout {
+    display:none;
+}
+
+
+#boxes {
+    width:100%;
+    min-height:400px;
+}
+
+
+
+/*---------------------------------------- homepage boxes ---------------------------------------------------*/
+.box {
+    position: relative;
+    /*width: 23%;*/ 
+    width: 30.3%;   
+    overflow:hidden;
+    margin:1.5%;
+    color:white;
+    float:left;    
+    background:#EAE9E6;
+    -webkit-transition: all .3s ease; -moz-transition: all .3s ease; transition: all .3s ease;
+}
+
+.box:hover {
+    opacity:0.8;
+}
+.box:before{
+    content: "";
+    display: block;
+    padding-top: 75%; 
+}
+
+.content{
+    /* this is within the box--*/
+    position:  absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.boxText {
+    position:absolute;
+    z-index:99;
+    width:90%;
+    height:100%;
+    padding:5%;
+    top:0;
+    left:0;
+    text-align:center;
+    background:rgba(33,33,33,0.5);
+    text-shadow: 2px 2px 0px black; 
+}
+
+.boxText h2 {
+    font-size:1.5em;
+    margin:0;
+    line-height:1.1;
+    color:white;
+    font-weight:300;
+    letter-spacing:0.3px;
+}
+.boxText p {
+    margin-bottom:0;
+    font-size:1.1em;
+    /*font-weight:bold;*/
+    color:white;
+}
+.boxText a {
+    font-size:1.2em;
+    font-weight:bold;
+    color:white;
+}
+span.linkText {
+    position:absolute;
+    bottom:0;
+    left:0;    
+    width:100%;
+    height:14%;
+    padding:3% 0 1%;
+    background:rgba(0,0,0,0.6);
+    text-align:center;
+    font-weight:bold;
+    font-size:1.2em;
+}
+.box img {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:auto;
+    z-index:88;
+}
+.breakingText {
+    clear:left;
+
+}
+.breakingText p {
+    padding:10px 1.25% 14px ;
+    margin-bottom:0;  
+}
+
